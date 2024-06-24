@@ -8,10 +8,25 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "MultiMeshLibrary",
+"language": "GDScript",
+"path": "res://addons/multimesh_library/nodes/multimesh_library.gd"
+} ]
+_global_script_class_icons={
+"MultiMeshLibrary": ""
+}
+
 [application]
 
 config/name="multimesh-plugin"
+run/main_scene="res://test.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/multimesh_library/plugin.cfg" )
 
 [gui]
 

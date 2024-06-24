@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/multimesh_library/nodes/multimesh_library.gd" type="Script" id=1]
+[ext_resource path="res://addons/multimesh_library/nodes/multimesh_library_child.gd" type="Script" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 0.05, 0, 0, 0, -0.05, 4.37114e-09, 0, -4.37114e-09, -0.05, 0, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="Item" type="Spatial" parent="Spatial"]
+transform = Transform( 0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, -6.30581, 0, 16.8958 )
+script = ExtResource( 2 )
+mesh_id = 7
+
+[node name="Item2" type="Spatial" parent="Spatial"]
+transform = Transform( 0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, -15.5834, 1.41271, -37.8561 )
+script = ExtResource( 2 )
+mesh_id = 34
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02686, 2.79464 )
